@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mattmezza/aclify.png)](https://travis-ci.org/mattmezza/aclify.png)
+[![Build Status](https://travis-ci.org/mattmezza/aclify.svg?branch=master)](https://travis-ci.org/mattmezza/aclify)
 
 # aclify
 A simple and plain ACL component based on a YAML file.
