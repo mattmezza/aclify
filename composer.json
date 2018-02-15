@@ -1,0 +1,26 @@
+{
+    "name": "mattmezza/aclify",
+    "description": "A simple and plain ACL component based on a YAML file.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matteo Merola",
+            "email": "mattmezza@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/yaml": "^4.0",
+        "illuminate/support": "^5.6",
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aclify\\": "src/",
+            "Aclify\\Exceptions\\": "src/exceptions"
+        }
+    }
+}

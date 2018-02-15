@@ -1,0 +1,17 @@
+roles: 
+  billing: 
+    - payments
+    - pluto
+  marketing: 
+    - mailchimp
+    - facebook
+  support: 
+    - cms_tools
+    - pippo
+users: 
+  advanced: 
+    - marketing
+    - billing
+    - support
+  base: 
+    - support
