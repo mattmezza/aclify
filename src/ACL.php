@@ -6,6 +6,7 @@ namespace Aclify;
 use Symfony\Component\Yaml\Yaml;
 use Aclify\Exceptions\MissingACLSpecsFile;
 use Illuminate\Support\Collection;
+use Aclify\Exceptions\UserNotFoundException;
 
 class ACL
 {
@@ -32,6 +33,9 @@ class ACL
 
     public function rolesOf(string $user) : array 
     {
+        if(!isset($this->specs["users"][$user])){
+            throw new UserNotFoundException();
+        }
         return $this->specs["users"][$user];
     }
 
